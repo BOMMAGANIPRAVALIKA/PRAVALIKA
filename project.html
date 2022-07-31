@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        .main{
+            height:100vh;
+            width:100%;
+            overflow: scroll;
+            overflow-x: visible;
+        }
+        *{
+            margin:0 px;
+        padding:0 px;
+        box-sizing: border-box;
+            }
+            .player{
+                width: 100%;
+                height: 100vh;
+                padding: 70px 70px;
+                background-color:red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 40px;
+                align-items: center;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .main-thumbnail
+            {
+                width:350px;
+                height:350px;
+                background-color: green;
+            }
+            audio{
+                width: 10%;
+            }
+            .song-desc{
+
+                align-self: flex-start;
+            }
+            .section{
+    
+                width:100%;
+                background-color:black;
+                padding:30px 30px;
+            }
+            .title{
+                color: white;
+                font-size: 20px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .music-list{
+                width:100%;
+             /*   background-color: red;*/
+                margin-top: 20px;
+
+            }
+            .tile{
+                width: 100%;
+                padding: 10px 20px;
+         background-color :#313131;
+         display: flex;
+         border-radius: 10px;
+         margin-top: 20px;
+         transition: .3s;
+         cursor:pointer;
+            }
+            .tile :hover{
+                background-color: #606060;
+            }
+
+            .thumbnail{
+                height:70px;
+                width:70px;
+                border-radius: 10px;
+                overflow:hidden;
+              /*  background-color:blue;*/
+            }
+            .thumbnail>img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .description{
+               padding: 20px 20px;
+             /*   background-color:green;*/
+color:white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+row-gap: 3px;
+            }
+            .description> h2{
+                font-weight: 300;
+
+            }     
+            .description >h3{
+                font-weight: 400;
+                font-size: 17px;
+            } 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="player">
+            <div classs="main-thumbnail"></div>
+            <div class="song-desc">
+                <h1>Song Name</h1>
+            <h3>Artist Name</h3>
+            </div>
+            <audio src=""controls></audio>
+        </div>
+    <div class="section"> 
+        <h1 class-="title"> Music Player</h1>
+        <div class="music-list">
+            
+            </div>
+        </div>
+        </div>
+  <script>"inde.js"</script>
+    
+</body>
+</html>
